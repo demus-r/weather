@@ -81,60 +81,24 @@
             </div>
         </div>
         <div class="box">
-            <script>
-                document.write("<h2>" + todayis + ", " + nowdate + " " + nowmonthis + " " + nowyear + " р.</h2>");
-            </script>
-            <p><b>Народний прогноз погоди</b>: У цей день вшановується пам'ять священномученика Мефодія, єпископа Патарського. У народі цей день називали Павутинним, тому що погоду "прогнозував" павук. Якщо в цей день він не розкидає павутину - буде дощ або буря. А якщо знову плете павутину - зміна погоди на краще. Дуже часто цей день буває дощовим, з грозою. Дощ у цей день міг передбачати не лише павук. Якщо мурахи ховаються в купу - можна очікувати на сильний вітер, дощ, грозу: жаби в траву виповзають - також слід чекати на дощ.</p>
+            <h2>Форма зворотнього зв'язку</h2> <!-- Встановити мінімальну ширину -->
+            <p>Шавновні гості Сайту, буду радий Вашим побажанням та пропозиціям! Вони будуть розглянуті впродовж однієї доби. Щоб надіслати листа, заповніть, будь-ласка, наступну форму.</p>
+            <p>Усі поля є обов'язковими для заповнення.</p>
         </div>
     </section>
     <section>
-        <div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">
-            <div class="db_left">
-                <img id="hot" src="images/img/img_transp.gif" alt="hot">
-            </div>
-            <div class="db_right">
-                <h3>Вночі</h3>
-                <p class="item">Температура, С: <span class="item">+21-25</span></p>
-                <p class="item">Вологість, %: <span class="item">55</span></p>
-                <p class="item">Тиск, мм: <span class="item">760</span></p>
-            </div>
+        <div class="box">
+            <form action="#" method="post" autocomplete="off" id="form-contact">
+                    <input type="text" name="lastname" placeholder="Ваше прізвище" maxlength="20" required autocomplete="off" autofocus size="30"><br><br>
+                    <input type="text" name="firstname" placeholder="Ваше ім'я" maxlength="20" required autocomplete="off" size="30"><br><br>
+                    <input type="email" name="email" placeholder="Ваш e-mail" maxlenght="35" required autocomplete="off" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,5}$"><br><br>
+                    <p class="item">Ваше повідомлення:</p>
+                    <textarea name="message" rows="10" cols="67" required></textarea></br>
+                    <input type="checkbox" name="sendnews" value="accepted" id="yessend" checked>
+                    <label for="yessend" form="form-contact"><span>Я хочу отримувати новини.</span></label><br>
+                    <input type="submit" value="Надіслати повідомлення">
+            </form>
         </div>
-
-        <div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">
-            <div class="db_left">
-                <img id="cloudy" src="images/img/img_transp.gif" alt="cloudy">
-            </div>
-            <div class="db_right">
-                <h3>Зранку</h3>
-                <p class="item">Температура, С: <span class="item">+21-25</span></p>
-                <p class="item">Вологість, %: <span class="item">55</span></p>
-                <p class="item">Тиск, мм: <span class="item">760</span></p>
-            </div>
-        </div>
-            
-        <div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">
-            <div class="db_left">
-                <img id="rainy" src="images/img/img_transp.gif" alt="rainy">
-            </div>
-            <div class="db_right">
-                <h3>Вдень</h3>
-                <p class="item">Температура, С: <span class="item">+21-25</span></p>
-                <p class="item">Вологість, %: <span class="item">55</span></p>
-                <p class="item">Тиск, мм: <span class="item">760</span></p>
-            </div>
-        </div>
-
-        <div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">
-            <div class="db_left">
-                <img id="snowy" src="images/img/img_transp.gif" alt="snowy">
-            </div>
-            <div class="db_right">
-                <h3>Ввечері</h3>
-                <p class="item">Температура, С: <span class="item">+21-25</span></p>
-                <p class="item">Вологість, %: <span class="item">55</span></p>
-                <p class="item">Тиск, мм: <span class="item">760</span></p>
-            </div>
-        </div>      
     </section>
 </article>
 <footer>
@@ -173,7 +137,7 @@
             </div>
         </div>
 </footer>
-
+    
     <!-- JavaScript-ядро Bootstrap
     ================================================== -->
     <!-- Розміщуйте підключення JavaScript в кінці документа щоб сторінки завантажувались швидше -->
