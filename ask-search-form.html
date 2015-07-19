@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form Ask-Search</title>
+    </head>
+    <body>
+        
+        <form method="post" id="form1">
+            <input class="alf-form" type="text" name="search_alf" size="41" required autofocus>
+            <input class="alf-form" type="submit" value="Запитати!" onclick="myFunction()">
+        </form>
+            <script>
+                function myFunction() {
+                window.open("http://www.google.com/?#q="+form1.search_alf.value);
+                }
+            </script>
+        
+    </body>
+    
+</html>
