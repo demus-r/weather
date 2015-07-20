@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+}
+form {
+    padding-left: 3%;
+}
+input[type="text"], input[type="email"], textarea, input[type="submit"] {
+    width: 65%;
+    font-size: 1.4em;
+}
+html {
+    background-color: #ffffff;
+    background-image: url("images/bg-img/four_seasons_01_min.jpg"), url("images/bg-img/four_seasons_02_min.jpg"), 
+                        url("images/bg-img/four_seasons_03_min.jpg"), url("images/bg-img/four_seasons_04_min.jpg");
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    background-attachment: fixed;
+}
+body {
+    margin: 0;
+    width: 63%;
+    min-width: 845px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    font-size: 100%;
+    color: #000000;
+    border: 13px solid transparent;
+    -webkit-border-image: url("images/bg-img/border.png") 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url("images/bg-img/border.png") 30 stretch; /* Opera 11-12.1 */
+    border-image: url("images/bg-img/border.png") 30 stretch;
+}
+header {
+    width: 100%;
+    padding: 15px;
+    clear: both;
+    background: url("images/bg-img/lviv_bg.jpg") no-repeat center center;
+}
+nav {
+    width: 100%;
+    padding: 20px;
+    clear: both;
+    background: -webkit-linear-gradient(white,lightblue,white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white,lightblue,white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white,lightblue,white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white,lightblue,white); /* Standard syntax (must be last) */
+    border-radius: 35px;
+}
+article {
+    width: 100%;
+    clear: both;
+    }
+section {
+    width: 100%;
+    clear: both;
+    overflow: auto;
+    }
+footer {
+    width: 100%;
+    clear: both;
+    }
+ul.rwd {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+ul.rwd li {
+    display: inline;
+}
+ul.rwd li a:link, ul.rwd li a:visited, span#flip {
+    padding: 20px 15px;
+    margin: 5px;
+    background: -webkit-linear-gradient(white,lightblue,white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white,lightblue,white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white,lightblue,white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white,lightblue,white); /* Standard syntax (must be last) */
+    font-family: impact, charcoal, sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    color: #003366;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 15px white, 0 0 15px yellow;
+border: 0px solid lightblue;
+    }
+ul.rwd li a:hover, ul.rwd li a:active, span#flip:hover {
+    background: linear-gradient(white,orange,white);
+    color: #003366;
+    text-decoration: none;
+    text-shadow: 0px 0px 25px white, 0 0 15px yellow;
+    }
+h1 {
+    font-family: impact, charcoal, sans-serif;
+    font-weight: normal;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    word-spacing: 5px;
+    text-align: center;
+    font-size: 2.7em;
+    text-shadow: 0px 0px 15px grey;
+    -webkit-animation: titlemove 3s 1; /* Chrome, Safari, Opera */
+    animation: titlemove 3s 1; /* Standard syntax */
+    }
+@-webkit-keyframes titlemove {  /* Chrome, Safari, Opera */
+        50% {text-shadow: 0px 0px 21px #000000;
+        color: #000000;}
+}    
+@keyframes titlemove { /* Standard syntax */
+        50% {text-shadow: 0px 0px 21px #000000;
+        color: #000000;}
+    }
+h2 {
+    font-family: "Trebuchet MS", helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #5F9EA0;
+    }
+h3 {
+    font-family: "Trebuchet MS", helvetica, sans-serif;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+a {
+    font-size: 1.4em;
+}
+p, label span {
+    font-family: "Trebuchet MS", helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    }
+p.item {
+    font-family: "Trebuchet MS", helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: slategrey;
+    }
+p.rights {
+    text-align: center;
+    color: slategrey;
+    }
+span.item {
+    color: black;
+    }
+div.box {
+    border: 0px solid lightblue;
+    width: 100%;
+    padding: 13px;
+    }
+div.daybox {
+    float: left;
+    width: 45.5%;
+    margin: 10px;
+    display: block;
+    box-shadow: 2px 2px 5px #c0c0c0;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+    }
+div.daybox:hover {
+    box-shadow: 3px 3px 8px grey;
+    }
+div.db_left {
+    width: auto;
+    float: left;
+    }
+div.db_right {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    clear: right;
+    }
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    background-color: hsla(240, 100%, 90%, 0.3);
+    border: 1px solid #dcdcdc;
+    }
+input[type=text]:valid, input[type=email]:valid, textarea:valid {
+    background-color: #ffffff;
+    border: 1px dotted #dcdcdc;
+    font-family: "courier new", courier, monospace;
+    font-weight: normal;
+    }
+
+div.box-rwd {
+    width: 100%;
+    padding: 0 26px;
+    }
+div.rwd-row {
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+background-color: #ffffff;
+}
+#panel, #flip {
+    text-align: center;
+    width: 100%;
+}
+#panel {
+    display: none;
+}
+span#flip, span#flip:hover {
+    cursor: pointer;
+}
+a.rwd:link, a.rwd:visited {
+    display: block;
+    padding: 10px 0;
+    font-family: tahoma, geneva, sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    color: #003366;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+a.rwd:hover, a.rwd:active {
+    color: #003366;
+    text-decoration: none;
+}
+
+#hot {
+    width: 150px;
+    height: 130px;
+    background: url("images/img/weather_all.png") 0 0;
+}
+#cloudy {
+    width: 150px;
+    height: 130px;
+    background: url("images/img/weather_all.png") -150px 0;
+}
+#rainy {
+    width: 150px;
+    height: 130px;
+    background: url("images/img/weather_all.png") 0 -130px;
+}
+#snowy {
+    width: 150px;
+    height: 130px;
+    background: url("images/img/weather_all.png") -150px -130px;
+}
+
+
+div#rwd-bg-menu {
+    display: block;
+    }
+div#rwd-sm-menu {
+    display: none;
+    }
+
+
+@media only screen and (max-width: 1300px) {
+html {
+    background-color: #ffffff;
+    background-image: url("images/bg-img/four_seasons_01_min2.jpg"), url("images/bg-img/four_seasons_02_min2.jpg"), 
+                        url("images/bg-img/four_seasons_03_min2.jpg"), url("images/bg-img/four_seasons_04_min2.jpg");
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    background-attachment: fixed;
+    }
+body {
+    width: 65%;
+    min-width: 0;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+div#rwd-bg-menu {
+    display: none;
+    }
+div#rwd-sm-menu {
+    display: block;
+    }
+html {
+    background-color: #ffffff;
+    background-image: url("images/bg-img/four_seasons_01_min2m.jpg"), url("images/bg-img/four_seasons_02_min2m.jpg"), 
+                        url("images/bg-img/four_seasons_03_min2m.jpg"), url("images/bg-img/four_seasons_04_min2m.jpg");
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    background-attachment: fixed;
+    }
+body {
+    width: 75%;
+    }
+div.daybox {
+    width: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+div#rwd-bg-menu {
+    display: none;
+    }
+div#rwd-sm-menu {
+    display: block;
+    }
+html {
+    background-color: #ffffff;
+    background-image: url("images/bg-img/four_seasons_01_min2m.jpg"), url("images/bg-img/four_seasons_02_min2m.jpg"), 
+                        url("images/bg-img/four_seasons_03_min2m.jpg"), url("images/bg-img/four_seasons_04_min2m.jpg");
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    background-attachment: fixed;
+    }
+body {
+    width: 70%;
+    }
+div.daybox {
+    width: auto;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+div#rwd-bg-menu {
+    display: none;
+    }
+div#rwd-sm-menu {
+    display: block;
+    }
+html {
+    background-color: #ffffff;
+    background-image: none;
+    }
+body {
+    width: 100%;
+    }
+div.daybox {
+    width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+div#rwd-bg-menu {
+    display: none;
+    }
+div#rwd-sm-menu {
+    display: block;
+    }
+div.daybox {
+    width: 95%;
+    }
+input[type="text"], input[type="email"], textarea, input[type="submit"] {
+    width: 90%;
+    font-size: 1.4em;
+    }
+}
