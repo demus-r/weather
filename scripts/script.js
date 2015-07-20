@@ -26,10 +26,9 @@ $(function(){
                         '</div>' +
                         '<div class="db_right">' +
                             '<h3>' + day + '</h3>' +
-                            '<p class="item">Температура, С: <span class="item">' + temp + '</span></p>'
-                            '<p class="item">Стан: <span class="item">' + condition + '</span></p>'
-                            
-                        '</div>'
+                            '<p class="item">Температура, С: <span class="item">' + temp + '</span></p>' +
+                            '<p class="item">Стан: <span class="item">' + condition + '</span></p>' +
+                        '</div>' +
                     '</div>'
                     ;
         
