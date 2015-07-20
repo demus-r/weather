@@ -29,8 +29,7 @@ $(function(){
                             '<p class="item">Температура, С: <span class="item">' + temp + '</span></p>' +
                             '<p class="item">Стан: <span class="item">' + condition + '</span></p>' +
                         '</div>' +
-                    '</div>'
-                    ;
+                    '</div>';
         
         /*var markup = '<tr>'+
                 '<td>' + day + '</td>' +
