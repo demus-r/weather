@@ -1,5 +1,6 @@
 div.daybox:hover {
     box-shadow: 3px 3px 8px grey;
+border: 1px solid lightblue;
     }
 div.db_left {
     width: auto; /* 45% */
