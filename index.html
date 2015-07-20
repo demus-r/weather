@@ -1,13 +1,28 @@
+<!doctype html>
 <html>
     <head>
-    <script type="text/javascript" src="some.js"></script>
-</head>
-<body>
+        <meta charset="utf-8" />
+        <title>Сайт прогнозу погоди</title>
+    </head>
 
-Coming soon!/Незабаром! ;-)
-<br><br>
-<img src="images/note-ComingSoon.jpg">
-    
-</body>
+    <body>
+        <header>
+            <h1>Найпростіший прогноз погоди</h1>
+        </header>
 
+        <p>Місто: <span id="location" ></span></p>
+
+        <table id="weatherTable">
+            <tr>
+                <th>Коли</th><th>Небо</th><th>Температура</th><th>Стан</th>
+            </tr>
+        </table>
+
+        <p id="error"></p>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script src="scripts/weatherService.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
