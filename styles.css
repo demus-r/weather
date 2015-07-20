@@ -1,11 +1,19 @@
+div.daybox {
+    float: left;
+    width: 45.5%;
+    margin: 10px;
+    display: block;
+    box-shadow: 2px 2px 5px #c0c0c0;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+    }
 div.daybox:hover {
     box-shadow: 3px 3px 8px grey;
-border: 1px solid lightblue;
     }
 div.db_left {
     width: auto; /* 45% */
     float: left;
-border: 0px solid lightblue;
+border: 1px solid lightblue;
     }
 div.db_right {
     width: auto; /* 55% */
