@@ -16,11 +16,11 @@ $(function(){
                 Math.round(this.temp.day) + '&deg;C'
             );
         });
-        $(".daybox").dblclick(function(){
+        $(".daybox").dblclick(function(){ // додано мною
                 $(this).hide("slow","swing");
         });
         
-        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="tooltip"]').tooltip(); // додано мною
         
         $('#location').html(city + ', <b>' + country + '</b>'); // Äîäàºìî ëîêàö³þ íà ñòîð³íêó
     }
@@ -28,8 +28,8 @@ $(function(){
     function addWeather(icon, day, condition, temp, pressure){
         var markup = '<div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">' +
                         '<div class="db_left">' +
-                            //'<img id=' + icon + ' src="images/img/img_transp.gif">' +
-                            '<img src="images/icons/'+ icon +'.png" />' +
+                            '<img id=' + icon + ' src="images/img/img_transp.gif">' +
+                            //'<img src="images/icons/'+ icon +'.png" />' +
                         '</div>' +
                         '<div class="db_right">' +
                             '<h3>' + day + '</h3>' +
