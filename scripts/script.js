@@ -20,7 +20,7 @@ $(function(){
     }
 
     function addWeather(icon, day, condition, temp, pressure){
-        /*var markup = '<div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">' +
+        var markup = '<div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">' +
                         '<div class="db_left">' +
                             '<img id=' + icon + ' src="images/img/img_transp.gif">' +
                         '</div>' +
@@ -30,16 +30,16 @@ $(function(){
                             '<p class="item">Стан: <span class="item">' + condition + '</span></p>' +
                             '<p class="item">Тиск, С: <span class="item">' + pressure + '</span></p>' +
                         '</div>' +
-                    '</div>';*/
-        /*document.getElementById("weatherTable").innerHTML = markup;*/
+                    '</div>';
+        document.getElementById("weatherTable").innerHTML = markup;
         
-        var markup = '<tr>'+
+        /*var markup = '<tr>'+
                 '<td>' + day + '</td>' +
                 '<td>' + '<img src="images/icons/'+ icon +'.png" />' + '</td>' +
                 '<td>' + temp + '</td>' +
                 '<td>' + condition + '</td>'
             + '</tr>';
-        weatherTable.insertRow(-1).innerHTML = markup; // Äîäàºìî ðÿäîê äî òàáëèö³
+        weatherTable.insertRow(-1).innerHTML = markup;*/ // Äîäàºìî ðÿäîê äî òàáëèö³
     }
 
     function showError(msg){
