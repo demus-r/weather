@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="uk-UA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My weather site</title>
+    
+    <!-- Свіжа збірка мінімізованих CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- Додаткові теми -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- Свіжа збірка мінімізованої JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="a_styles.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $(".daybox").dblclick(function(){
+        $(this).hide("slow","swing");
+        });
+        });
+    </script>
+
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script src="moment-with-locales.min.js"></script>
+    <script src="start-end-week.js"></script>
+
+    <script src="hello-script.js"></script>
+
+</head>
+<body>
+    
+<header>
+    <h1>Прогноз погоди</h1>
+</header>
+<nav>
+    <div id="rwd-bg-menu">
+        <ul class="rwd">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="weekly_forecast.html">Прогноз на тиждень</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="#id01">Помічник =)</a></li>
+        </ul>
+    </div>
+    <div id="rwd-sm-menu">
+        <ul class="rwd">
+            <li><span id="flip">Меню сайту</span></li>
+        </ul>
+    </div>
+</nav>
+<article>
+    <section>
+        <div class="box-rwd">
+            <div id="panel">
+                <div class="rwd-row"><a class="rwd" href="index.html">Головна</a></div>
+                <div class="rwd-row"><a class="rwd" href="weekly_forecast.html">Прогноз на тиждень</a></div>
+                <div class="rwd-row"><a class="rwd" href="contact.html">Контакти</a></div>
+                <div class="rwd-row"><a class="rwd" href="#id01">Помічник</a></div>
+            </div>
+        </div>
+        <div class="box">
+            <script>
+                document.write("<h2>" + todayis + ", " + nowdate + " " + nowmonthis + " " + nowyear + " р.</h2>");
+            </script>
+            <p><b>Народний прогноз погоди</b>: У цей день вшановується пам'ять священномученика Мефодія, єпископа Патарського. У народі цей день називали Павутинним, тому що погоду "прогнозував" павук. Якщо в цей день він не розкидає павутину - буде дощ або буря. А якщо знову плете павутину - зміна погоди на краще. Дуже часто цей день буває дощовим, з грозою. Дощ у цей день міг передбачати не лише павук. Якщо мурахи ховаються в купу - можна очікувати на сильний вітер, дощ, грозу: жаби в траву виповзають - також слід чекати на дощ.</p>
+        </div>
+    </section>
+    <section>
+        <div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">
+            <div class="db_left">
+                <img id="hot" src="images/img/img_transp.gif" alt="hot">
+            </div>
+            <div class="db_right">
+                <h3>Вночі</h3>
+                <p class="item">Температура, С: <span class="item">+21-25</span></p>
+                <p class="item">Вологість, %: <span class="item">55</span></p>
+                <p class="item">Тиск, мм: <span class="item">760</span></p>
+            </div>
+        </div>
+
+        <div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">
+            <div class="db_left">
+                <img id="cloudy" src="images/img/img_transp.gif" alt="cloudy">
+            </div>
+            <div class="db_right">
+                <h3>Зранку</h3>
+                <p class="item">Температура, С: <span class="item">+21-25</span></p>
+                <p class="item">Вологість, %: <span class="item">55</span></p>
+                <p class="item">Тиск, мм: <span class="item">760</span></p>
+            </div>
+        </div>
+            
+        <div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">
+            <div class="db_left">
+                <img id="rainy" src="images/img/img_transp.gif" alt="rainy">
+            </div>
+            <div class="db_right">
+                <h3>Вдень</h3>
+                <p class="item">Температура, С: <span class="item">+21-25</span></p>
+                <p class="item">Вологість, %: <span class="item">55</span></p>
+                <p class="item">Тиск, мм: <span class="item">760</span></p>
+            </div>
+        </div>
+
+        <div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">
+            <div class="db_left">
+                <img id="snowy" src="images/img/img_transp.gif" alt="snowy">
+            </div>
+            <div class="db_right">
+                <h3>Ввечері</h3>
+                <p class="item">Температура, С: <span class="item">+21-25</span></p>
+                <p class="item">Вологість, %: <span class="item">55</span></p>
+                <p class="item">Тиск, мм: <span class="item">760</span></p>
+            </div>
+        </div>      
+    </section>
+</article>
+<footer>
+        <div class="box">
+            <p class="rights">
+                2015 &reg; All Rights Reserved.
+            </p>
+            <div id="id01" class="alf-window">
+                <div class="alf-window-dialog">
+                    <div class="alf-window-content">
+                        <div class="alf-container">
+                            <a href="#" class="alf-close" title="Закрити">x</a>
+                        </div>
+                        <div class="alf-container">
+                            <img src="images/img/alf.jpg" alt="alf" width="300" height="226">
+                        </div>
+                        <div class="alf-container">
+                                    <script>
+                                        document.write("<h2>" + hello + "! Давно не бачилися... А я знав, що без моєї допомоги ти не справишся!</h2>");
+                                    </script>
+                                    <p>Гаразд, кажи, що тебе цікавить:</p>
+                                    <form method="post" id="form1">
+                                        <input class="alf-form" type="text" name="search_alf" size="41" required autofocus>
+                                        <input class="alf-form" type="submit" value="Запитати!" onclick="myFunction();">
+                                    </form>
+                                    <script>
+                                        function myFunction() {
+                                            if (form1.elements['search_alf'].value) {
+                                                window.open("http://www.google.com/?#q="+form1.search_alf.value);
+                                                }
+                                            }
+                                    </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+
+    <!-- JavaScript-ядро Bootstrap
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://twbs.docs.org.ua/dist/js/bootstrap.min.js"></script>
+    <!-- viewport для браузера IE10, це зроблено щоб виправити помилку для Surface/desktop Windows 8 -->
+    <script src="http://twbs.docs.org.ua/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+</body>
+</html>
