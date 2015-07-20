@@ -28,7 +28,7 @@ $(function(){
     function addWeather(icon, day, condition, temp, pressure){
         var markup = '<div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">' +
                         '<div class="db_left">' +
-                            '<img class="' + icon + '" src="images/img/img_transp.gif">' +
+                            '<img class="i' + icon + '" src="images/img/img_transp.gif">' +
                             //'<img src="images/icons/'+ icon +'.png" />' +
                         '</div>' +
                         '<div class="db_right">' +
