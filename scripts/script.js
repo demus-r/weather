@@ -30,7 +30,7 @@ $(function(){
                             '<p class="item">Стан: <span class="item">' + condition + '</span></p>' +
                         '</div>' +
                     '</div>';
-        document.getElementById("weatherTable").innerHTML = markup;
+        /*document.getElementById("weatherTable").innerHTML = markup;*/
         
         /*var markup = '<tr>'+
                 '<td>' + day + '</td>' +
@@ -38,7 +38,7 @@ $(function(){
                 '<td>' + temp + '</td>' +
                 '<td>' + condition + '</td>'
             + '</tr>';*/
-        /*weatherTable.insertRow(-1).innerHTML = markup; // Äîäàºìî ðÿäîê äî òàáëèö³*/
+        weatherTable.insertRow(-1).innerHTML = markup; // Äîäàºìî ðÿäîê äî òàáëèö³
     }
 
     function showError(msg){
