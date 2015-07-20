@@ -20,12 +20,24 @@ $(function(){
     }
 
     function addWeather(icon, day, condition, temp){
-        var markup = '<tr>'+
+        var markup = '<div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">' +
+                        '<div class="db_left">' +
+                            '<img id="hot" src="images/img/img_transp.gif" alt="hot">' +
+                        '</div>' +
+                        '<div class="db_right">' +
+                            '<h3>' + day + '</h3>' +
+                            '<p class="item">Температура, С: <span class="item">' + temp + '</span></p>'
+                            '<p class="item">Стан: <span class="item">' + condition + '</span></p>'
+                            '<p class="item">Тиск, мм: <span class="item">' + pressure '</span></p>'
+                        '</div>'
+                    '</div>'
+        
+        /*var markup = '<tr>'+
                 '<td>' + day + '</td>' +
                 '<td>' + '<img src="images/icons/'+ icon +'.png" />' + '</td>' +
                 '<td>' + temp + '</td>' +
                 '<td>' + condition + '</td>'
-            + '</tr>';
+            + '</tr>';*/
         weatherTable.insertRow(-1).innerHTML = markup; // Äîäàºìî ðÿäîê äî òàáëèö³
     }
 
