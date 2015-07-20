@@ -30,7 +30,7 @@ border: 0px solid lightblue;
     height: 130px;
     background: url("images/img/weather_all.png") 0 0;
 }
-#cloudy {
+#10n {
     width: 150px;
     height: 130px;
     background: url("images/img/weather_all.png") -150px 0;
