@@ -23,3 +23,25 @@ div.db_right {
     clear: right;
 border: 0px solid lightblue;
     }
+
+
+#hot {
+    width: 150px;
+    height: 130px;
+    background: url("images/img/weather_all.png") 0 0;
+}
+#cloudy {
+    width: 150px;
+    height: 130px;
+    background: url("images/img/weather_all.png") -150px 0;
+}
+#10d {
+    width: 150px;
+    height: 130px;
+    background: url("images/img/weather_all.png") 0 -130px;
+}
+#snowy {
+    width: 150px;
+    height: 130px;
+    background: url("images/img/weather_all.png") -150px -130px;
+}
