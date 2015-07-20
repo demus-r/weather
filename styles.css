@@ -219,7 +219,7 @@ a.rwd:hover, a.rwd:active {
     text-decoration: none;
 }
 
-.i02d {
+#hot {
     width: 150px;
     height: 130px;
     background: url("images/img/weather_all.png") 0 0;
@@ -229,7 +229,7 @@ a.rwd:hover, a.rwd:active {
     height: 130px;
     background: url("images/img/weather_all.png") -150px 0;
 }
-.10d {
+#rainy {
     width: 150px;
     height: 130px;
     background: url("images/img/weather_all.png") 0 -130px;
