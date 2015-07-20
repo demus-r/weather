@@ -16,6 +16,9 @@ $(function(){
                 Math.round(this.temp.day) + '&deg;C'
             );
         });
+        $(".daybox").dblclick(function(){
+                $(this).hide("slow","swing");
+        });
         $('#location').html(city + ', <b>' + country + '</b>'); // Äîäàºìî ëîêàö³þ íà ñòîð³íêó
     }
 
