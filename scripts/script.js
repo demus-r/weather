@@ -31,7 +31,7 @@ $(function(){
                             '<p class="item">Тиск, С: <span class="item">' + pressure + '</span></p>' +
                         '</div>' +
                     '</div>';
-        document.getElementById("weatherTable").innerHTML = markup;
+        $("#weatherTable").append(markup);
         
         /*var markup = '<tr>'+
                 '<td>' + day + '</td>' +
