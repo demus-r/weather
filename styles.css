@@ -219,22 +219,22 @@ a.rwd:hover, a.rwd:active {
     text-decoration: none;
 }
 
-#hot {
+.hot {
     width: 150px;
     height: 130px;
     background: url("images/img/weather_all.png") 0 0;
 }
-#cloudy {
+.cloudy {
     width: 150px;
     height: 130px;
     background: url("images/img/weather_all.png") -150px 0;
 }
-#rainy {
+.rainy {
     width: 150px;
     height: 130px;
     background: url("images/img/weather_all.png") 0 -130px;
 }
-#snowy {
+.snowy {
     width: 150px;
     height: 130px;
     background: url("images/img/weather_all.png") -150px -130px;
