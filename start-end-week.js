@@ -1,5 +1,5 @@
-var monday = moment().day(0); // беремо з прикріпленого скріпту. Далі обробка.
-var sunday = moment().day(6); // аналогічно.
+var monday = moment().day(1); // беремо з прикріпленого скріпту. Далі обробка.
+var sunday = moment().day(7); // аналогічно.
 
 var thismonday = new Date(monday);
 var thissunday = new Date(sunday);
