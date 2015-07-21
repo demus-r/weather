@@ -25,7 +25,7 @@ $(function(){
         $('#location').html(city + ', <b>' + country + '</b>'); // Äîäàºìî ëîêàö³þ íà ñòîð³íêó
     }
 
-    function addWeather(icon, day, condition, temp, pressure){
+    function addWeather(icon, day, condition, temp){
         var markup = '<div class="daybox" data-toggle="tooltip" data-placement="bottom" title="Подвійний клік для закриття">' +
                         '<div class="db_left">' +
                             //'<img class="i' + icon + '" src="images/img/img_transp.gif">' +
@@ -35,7 +35,6 @@ $(function(){
                             '<h3>' + day + '</h3>' +
                             '<p class="item">Температура, С: <span class="item">' + temp + '</span></p>' +
                             '<p class="item">Стан: <span class="item">' + condition + '</span></p>' +
-                            '<p class="item">Тиск, С: <span class="item">' + pressure + '</span></p>' +
                         '</div>' +
                     '</div>';
         $("#weatherTable").append(markup);
